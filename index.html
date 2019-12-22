@@ -1,0 +1,73 @@
+<!--Name:Bhargavi Basi
+  Course name: GUI I
+  sources used: https://www.w3schools.com/css
+  File type: .html file
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 9</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+        <link type="text/css" rel="stylesheet" href="css/scrabble.css">
+
+    </head>
+    <body>
+        <h1>Scrabble game Implemntion</h1>
+        <div><b>Vertical Word:</b><span id="vertical_word"></span>
+          <b>Horizontal Word:</b><span id="horizontal_word"></span>
+          <b>Remaining Tiles:</b><span id="thetilecount_board"></span>
+          <b>player_score:</b><span id="player_score"></span></div>
+        <div id="dict" ></div>
+        <div id="blocksboard" class="blocksboard">
+            <table >
+                <tr>
+                    <td> <img id="0" class="blocksofthe_game" src="images/Scrabble_Tile_Blank.jpg" height="45" width="45"></td>
+                </tr>
+                <tr>
+                    <td> <img id="1" class="blocksofthe_game" src="images/Scrabble_Tile_Blank.jpg"  height="45" width="45"></td>
+                </tr>
+
+                <tr>
+                    <td> <img id="2" class="blocksofthe_game" src="images/Scrabble_Tile_Blank.jpg"  height="45" width="45"></td>
+                </tr>
+                <tr>
+                    <td> <img id="3" class="blocksofthe_game" src="images/doubleletter.png"  height="45" width="45"></td>
+                </tr>
+                <tr>
+                    <td> <img id="4" class="blocksofthe_game" src="images/Scrabble_Tile_Blank.jpg"  height="45" width="45"></td>
+                </tr>
+                <tr>
+                    <td> <img id="5" class="blocksofthe_game" src="images/doubleword.png"  height="45" width="45"></td>
+                </tr>
+                <tr>
+                    <td> <img id="6" class="blocksofthe_game" src="images/Scrabble_Tile_Blank.jpg"  height="45" width="45"></td>
+                    <td> <img id="7" class="blocksofthe_game" src="images/Scrabble_Tile_Blank.jpg"  height="45" width="45"></td>
+                    <td> <img id="8" class="blocksofthe_game" src="images/doubleletter.png"  height="45" width="45"></td>
+                    <td> <img id="9" class="blocksofthe_game" src="images/Scrabble_Tile_Blank.jpg"  height="45" width="45"></td>
+                    <td> <img id="10" class="blocksofthe_game" src="images/Scrabble_Tile_Blank.jpg"  height="45" width="45"></td>
+                    <td> <img id="11" class="blocksofthe_game" src="images/doubleword.png"  height="45" width="45"></td>
+                    <td> <img id="12" class="blocksofthe_game" src="images/Scrabble_Tile_Blank.jpg"  height="45" width="45"></td>
+                </tr>
+            </table>
+        </div>
+        <input type="button" class="buttonstyle" value="Start Game" onclick="begingame()" id="gamebegin">
+        <input type="button" class="buttonstyle"  value="Submit Word" onclick="confirm()" id="confirm">
+      <input type="button"  class="buttonstyle"  value="Next Word" onclick="word_next()" id="word_next">
+        <br/>
+        <br/>
+        <div id="racks" class="rack"></div>
+
+
+
+        <script  src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+        <script src="js/dictionary.js"></script>
+        <script src="js/scrabble.js"></script>
+
+    </body>
+</html>

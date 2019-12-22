@@ -1,0 +1,35 @@
+/*Name:Bhargavi Basi
+  Course name: GUI I
+  sources used: https://www.w3schools.com/css
+  File type: .css file
+  */
+/*button is being styped*/
+.buttonstyle{
+    height:30px;
+    width:100px;
+    font-weight:bold;
+}
+.img{
+    margin: 10px;
+}
+/*margin for blocks*/
+
+.blocksofthe_game
+{
+    margin: 10px;
+}
+
+.rack{
+    background-image:url("../images/scrabble-tile_rack.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100px;
+    border:1px solid black;
+    height:10%;
+    width:100%;
+}
+/*image for the board in the back */
+.blocksboard{
+
+  background-image: url("../images/imageback.jpg");
+   background-size: cover;
+}
